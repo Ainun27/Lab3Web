@@ -3,7 +3,7 @@
 
 Tugas mengerjakan latihan pada module dua Pemrograman Web
 
-####Persiapan membuat dokumen HTML dengan nama file lab3_list.html seperti berikut.
+#### Persiapan membuat dokumen HTML dengan nama file lab3_list.html seperti berikut.
 
 ```sh
 <!DOCTYPE html>
@@ -20,226 +20,489 @@ Tugas mengerjakan latihan pada module dua Pemrograman Web
 </body>
 </html>
 ```
-   
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20182343.png?raw=true)
 
 1. Membuat Ordered List
 - Kemudian tambahkan kode untuk membuat Ordered List seperti berikut.
 
 ```sh
-<section id="order-list">
- <h2>Ordered List</h2>
- <ol>
- <li>Pemrograman Web</li>
- <li>Sistem Informasi</li>
- <li>Basis Data 2</li>
- </ol>
-</section>
-```
-
-2. Selanjutnya simpan perubahan yang ada, dan lakukan refresh pada browser untuk melihat hasilnya.
-   
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20182508.png?raw=true)
-
-#### Menambahkan Inline CSS
-
-3. Kemudian tambahkan deklarasi inline CSS pada tag <p> seperti berikut.
-
-```sh
-<p style="text-align: center; color: #ccd8e4;">
-```
-
-4. Simpan kembali dan refresh kembali browser untuk melihat perubahannya.
-   
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20182638.png?raw=true)
-
-#### Membuat CSS Eksternal
-
-5. Buatlah file baru dengan nama style_eksternal.css kemudian buatlah deklarasi CSS seperti berikut.
-
-```sh
-nav {
-background: #20A759;
-color:#fff;
-padding: 10px;
-}
-nav a {
-color: #fff;
-text-decoration: none;
-padding:10px 20px;
-}
-nav .active,
-nav a:hover {
-background: #0B6B3A;
-}
-```
-
-6. Kemudian tambahkan tag <link> untuk merujuk file css yang sudah dibuat pada bagian <head>
-
-```sh
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <!-- menyisipkan css eksternal -->
- <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
 </head>
+<body>
+    <header>
+    <h1>Membuat List</h1>
+    </header>
+
+    <section id="order-list">
+        <h2>Ordered List</h2>
+        <ol>
+        <li>Pemrograman Web</li>
+        <li>Sistem Informasi</li>
+        <li>Basis Data 2</li>
+        </ol>
+    </section>
+</body>
+</html>
 ```
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/satu.png?raw=true)
 
-7. Selanjutnya refresh kembali browser untuk melihat perubahannya.
-
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20183144.png?raw=true)
-
-#### Menambahkan CSS Selector
-
-8. Selanjutnya menambahkan CSS Selector menggunakan ID dan Class Selector. Pada file
-style_eksternal.css, tambahkan kode berikut.
+2. Membuat Unorderd List
+- Kemudian tambakan kode untuk membuat Unordered List, setelah deklarasi ordered list pada
+section unordered-list, seperti berikut.
 
 ```sh
-/* ID Selector */
-#intro {
-background: #418fb1;
-border: 1px solid #099249;
-min-height: 100px;
-padding: 10px;
-}
-#intro h1 {
-text-align: left;
-border: 0;
-color: #fff;
-}
-/* Class Selector */
-.button {
- padding: 15px 20px;
-background: #bebcbd;
-color: #fff;
-display: inline-block;
-margin: 10px;
-text-decoration: none;
-}
-.btn-primary {
-background: #E42A42;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+    <h1>Membuat List</h1>
+    </header>
+
+    <section id="order-list">
+        <h2>Ordered List</h2>
+        <ol>
+        <li>Pemrograman Web</li>
+        <li>Sistem Informasi</li>
+        <li>Basis Data 2</li>
+        </ol>
+    </section>
+
+    <section id="unorder-list">
+        <h2>Unordered List</h2>
+        <ul type="square">
+        <li>Jaringan Komputer</li>
+        <li>Struktur Data</li>
+        <li>Algoritma &amp; Pemrograman</li>
+        </ul>
+    </section>
+</body>
+</html>
+```
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/dua.png?raw=true)
+   
+3. Membuat Description List
+- Kemudian tambahkan kode untuk membuat description list setelah deklarasi unorderd-list
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+    <h1>Membuat List</h1>
+    </header>
+
+    <section id="order-list">
+        <h2>Ordered List</h2>
+        <ol>
+        <li>Pemrograman Web</li>
+        <li>Sistem Informasi</li>
+        <li>Basis Data 2</li>
+        </ol>
+    </section>
+
+    <section id="unorder-list">
+        <h2>Unordered List</h2>
+        <ul type="square">
+        <li>Jaringan Komputer</li>
+        <li>Struktur Data</li>
+        <li>Algoritma &amp; Pemrograman</li>
+        </ul>
+    </section>
+
+    <section id="unorder-list">
+        <h2>Description List</h2>
+        <dl>
+        <dt>Fakultas Teknik</dt>
+        <dd>Teknik Industri</dd>
+        <dd>Teknik Informatika</dd>
+        <dd>Teknik Lingkungan</dd>
+        <dt>Fakultas Ekonomi dan Bisnis</dt>
+        <dd>Akuntansi</dd>
+        <dd>Manajemen</dd>
+        <dd>Bisnis Digital</dd>
+        </dl>
+    </section>
+</body>
+</html>
 ```
 
-9. Kemudian simpan kembali dan refresh browser untuk melihat perubahannya.
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/tiga.png?raw=true)
 
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20183256.png?raw=true)
+
+#### Membuat Tabel
+- Buat file baru dengan nama lab3_tabel.html seperti berikut.
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+       <h1>Membuat Table</h1>
+    </header>
+</body>
+</html>
+```
+- Kemudian selanjutnya tambahkan kode untuk membuat tabel sederhana seperti berikut :
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+       <h1>Membuat Table</h1>
+    </header>
+
+   <table border="1" cellpadding="0" cellspacing="0">
+       <thead>
+       <tr>
+          <th>No.</th>
+          <th>Fakultas</th>
+          <th>Program Studi</th>
+       </tr>
+       </thead>
+    <tbody>
+       <tr>
+          <td>1.</td>
+          <td>Teknik</td>
+          <td>Teknik Informatika</td>
+       </tr>
+       <tr>
+          <td>2.</td>
+          <td>Teknik</td>
+          <td>Teknik Industri</td>
+       </tr>
+       <tr>
+          <td>3.</td>
+          <td>Teknik</td>
+          <td>Teknik Lingkungan</td>
+       </tr>
+    </tbody>
+   </table>
+
+</body>
+</html>
+```
+
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/empat.png?raw=true)
+
+1. Mengatur Margin dan Padding
+- Untuk mengatur margin dan padding pada cel data, tambahkan atribut cellpadding dan cellspacing pada tag table.
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+       <h1>Membuat Table</h1>
+    </header>
+
+   <table border="1" cellpadding="0" cellspacing="0">
+       <thead>
+       <tr>
+          <th>No.</th>
+          <th>Fakultas</th>
+          <th>Program Studi</th>
+       </tr>
+       </thead>
+    <tbody>
+       <tr>
+          <td>1.</td>
+          <td>Teknik</td>
+          <td>Teknik Informatika</td>
+       </tr>
+       <tr>
+          <td>2.</td>
+          <td>Teknik</td>
+          <td>Teknik Industri</td>
+       </tr>
+       <tr>
+          <td>3.</td>
+          <td>Teknik</td>
+          <td>Teknik Lingkungan</td>
+       </tr>
+    </tbody>
+   </table>
+
+</body>
+</html>
+```
+
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/lima.png?raw=true)
+
+2. Menggabungkan Sel Data
+- Untuk menggabungkan sel data, gunakan atribut rowspan dan colspan. Atribut rowspan untuk menggabungkan baris (secara vertikal) dan colspan untuk menggabungkan kolom (secara horizontal).
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+    
+</head>
+<body>
+    <header>
+    <h1>Membuat Table</h1>
+    </header>
+
+    <table e border="1" cellpadding="6" cellspacing="0">
+        <thead>
+            <tr>
+            <th>No.</th>
+            <th>Fakultas</th>
+            <th>Program Studi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td rowspan="3">Teknik</td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Teknik Industri</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Teknik Lingkungan</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/enam.png?raw=true)
+
+#### Membuat Form
+- Buat file baru dengan nama lab3_form.html seperti berikut.
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+       <h1>Membuat Form</h1>
+    </header>
+</body>
+</html>
+```
+
+- Kemudian selanjutnya tambahkan kode untuk membuat tabel sederhana seperti berikut :
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+    <h1>Membuat Form</h1>
+    </header>
+
+    <form action="proses.php" method="post">
+        <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama">
+        </p>
+        <p>
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+        </p>
+        <p>
+        <label>Jenis Kelamin</label>
+        <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+        for="jk_l">Laki-laki</label>
+        <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+        for="jk_p">Perempuan</label>
+        </p>
+        <p><input type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
+```
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/tujuh.png?raw=true)
+
+1. Menabahkan Style pada Form
+- Agar tampilan form lebih menarik, bisa ditambahkan CSS seperti berikut.
+
+```sh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan</title>
+
+    <style>
+        form p > label {
+        display: inline-block;
+        width: 100px;
+        }
+        form input[type="text"], form textarea {
+        border: 1px solid #197a43;
+        }
+        form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Membuat Form</h1>
+    </header>
+
+    <form action="proses.php" method="post">
+        <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama">
+        </p>
+        <p>
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+        </p>
+        <p>
+        <label>Jenis Kelamin</label>
+        <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+        for="jk_l">Laki-laki</label>
+        <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+        for="jk_p">Perempuan</label>
+        </p>
+        <p><input type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
+```
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/delapan.png?raw=true)
   
 ## Pertanyaan Dan Tugas
 
-1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
-
-#### Code html
+1. Buatlah form yang menampilkan dropdown menu dan listbox dengan multiple selection.
 
 ```sh
-<div class="artikel1">
-    <p>Hallo, saya ainun dwi permana. mahasiswa universitas pelita bangsa. 
-        senang bisa mendapatkan kesempatan mempelajasi css</p>
-</div>
-```
-
-#### Code css
-
-```sh
-.artikel1 {
-        background-color: antiquewhite;
-    }
-
-p {
-        border: 2px solid black;
-    }
-```
-
-#### hasil 
-
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20184834.png?raw=true)
-
-2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
-
-- h1 { ... }: Mengatur semua elemen tag h1 di seluruh halaman web.
-- #intro h1 { ... }: Mengatur hanya elemen tag h1 yang berada di dalam elemen dengan id="intro", sehingga lebih spesifik.
-
-3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
-
-- Ketika ada beberapa deklarasi CSS (internal, eksternal, dan inline) yang diterapkan pada elemen yang sama, prioritas (atau yang disebut CSS specificity) akan menentukan gaya mana yang diterapkan di browser.
-
-- Urutan prioritas dalam CSS adalah sebagai berikut:
-
-- Inline CSS: Deklarasi CSS yang ditulis langsung di atribut elemen HTML memiliki prioritas paling tinggi.
-- Internal CSS: Deklarasi yang diletakkan di dalam tag <style> di bagian <head> memiliki prioritas di bawah inline CSS.
-- External CSS: Deklarasi CSS yang di-link melalui file eksternal memiliki prioritas yang paling rendah dibandingkan dua yang lainnya.
-- Namun, spesifisitas selektor dan importance (!important) juga bisa memengaruhi prioritas.
-
-#### contoh
-
-#### Css Eksternal 
-
-```sh
-.artikel1 {
-        background-color: antiquewhite;
-    }
-```
-
-#### Css Internal
-
-```sh
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    .artikel1{
-            background-color: #77CCEF;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form with Dropdown and Multiple Selection Listbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
         }
-  </style>
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+<body>
+
+    <div class="form-container">
+        <h2>Latihan menampilkan dropdown menu dan listbox dengan multiple selection</h2>
+        <form>
+            <div class="form-group">
+                <label for="jurusan">Pilih Jurusan :</label>
+                <select name="jurusan" id="jurusan">
+                    <option value="informatika">Teknik Informatika</option>
+                    <option value="industri">Teknik Industri</option>
+                    <option value="geologi">Teknik Geologi</option>
+                    <option value="kimia">Teknik Kimia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Pilih Kelas :</label>
+                <select name="kelas" id="kelas" multiple size="2">
+                    <option value="Reguler">Kelas Pagi</option>
+                    <option value="Karyawan">Kelas Karyawan</option>
+                    <option value="Weekend">Kelas Weekend</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
 ```
 
-#### Inline Css
-
-```sh
-<div class="artikel1" style="background-color: bisque;">
-    <p>Hallo, saya ainun dwi permana. mahasiswa universitas pelita bangsa. 
-        senang bisa mendapatkan kesempatan mempelajasi css</p>
-</div>
-```
-
-#### Hasilnya
-
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20193845.png?raw=true)
-
-4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
-
-- Urutan Spesifisitas CSS:
-  
--  Inline CSS (misalnya, style="...") memiliki prioritas tertinggi.
-- Selector ID (misalnya, #paragraf-1) memiliki prioritas lebih tinggi dibandingkan selector class.
-- Selector Class (misalnya, .text-paragraf) memiliki prioritas lebih tinggi dibandingkan selector elemen.
-- Selector Elemen (misalnya, p { ... }) memiliki prioritas terendah.
-
-#### contoh
-
-#### Di HTML
-
-```sh
-<p id="paragraf-1" class="text-paragraf">Ini adalah paragraf contoh.</p>
-```
-
-#### CSS dengan selector ID
-
-```sh
-#paragraf-1 {
-  color: blue;
-  font-size: 18px;
-}
-```
-
-#### CSS dengan selector Class
-
-```sh
-.text-paragraf {
-  color: red;
-  font-size: 16px;
-}
-```
-
-#### Hasilnya
-
-![alt text](https://github.com/Ainun27/Lab2Web/blob/main/tugas2/Screenshot%202024-10-08%20195405.png?raw=true)
-
-
+![alt text](https://github.com/Ainun27/Lab3Web/blob/main/tugas3/sembilan.png?raw=true)
